@@ -1,0 +1,35 @@
+{
+  "name": "gulp_starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KaitoWatanabe",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": ">=2.6.5",
+    "font-awesome": "^4.4.0",
+    "foundation-sites": "^5.5.3",
+    "fs": "0.0.2",
+    "gulp": ">=3.8.11",
+    "gulp-concat": ">=2.5.2",
+    "gulp-data": "^1.2.0",
+    "gulp-extend": "^0.2.0",
+    "gulp-jade": ">=1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-pleeease": ">=1.2.0",
+    "gulp-plumber": ">=1.0.0",
+    "gulp-sass": ">=1.3.3",
+    "gulp-uglify": ">=1.2.0",
+    "jquery": "^2.1.4",
+    "jstransformer-marked": "^1.0.1",
+    "run-sequence": ">=1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KaitoWatanabe/gulp_starter"
+  },
+  "dependencies": {}
+}

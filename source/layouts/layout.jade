@@ -1,0 +1,16 @@
+include ../partials/_meta
+
+doctype html
+html(lang="ja" prefix=("og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml"))
+  head
+    block vars
+    mixin meta(title, slug)
+
+  body(id="#{slug}")
+
+    div.contents
+      block contents
+
+
+
+    script(src="/app.js")

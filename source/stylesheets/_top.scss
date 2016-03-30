@@ -1,0 +1,119 @@
+body {
+  font-family: 'BrandonGrotesque-Regular';
+  color: #fff;
+  // background: #222 url(/images/bg.png) center center no-repeat fixed;
+  // background-size: cover;
+}
+
+a,
+a:visited,
+a:active {
+  color: #fff;
+  }
+a:hover {
+  color: darken(#fff, 20%);
+}
+
+#top {
+  h1,
+  h2,
+  p {
+    color: #fff;
+    font-family: 'BrandonGrotesque-Regular';
+  }
+
+  h1 {
+    font-size: 3.8rem;
+    letter-spacing: 5px;
+    padding-top: 50px;
+    @media #{$small-only} {
+      line-height: 1.2;
+      font-size: 2rem;
+      letter-spacing: 3px;
+    }
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    margin-bottom: 90px;
+    @media #{$small-only} {
+      font-size: 1rem;
+      margin-bottom: 50px;
+    }
+  }
+
+  figure {
+    padding-top: 60px;
+    width: 100%;
+    @media #{$small-only} {
+      padding-top: 30px;
+      padding-right: 20px;
+      width: 120px;
+      float: right;
+    }
+  }
+
+  .work-list {
+    dt {
+      font-size: 2.5rem;
+      letter-spacing: 5px;
+      margin-bottom: 30px;
+      &:hover {
+        cursor: pointer;
+      }
+      @media #{$small-only} {
+        font-size: 2rem;
+      }
+      span {
+        transition: all 0.5s;
+        display: inline-block;
+        border-bottom: 3px solid #fff;
+        &:hover {
+          color: #000;
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  .link-list {
+    li {
+      margin-bottom: 26px;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      margin-left: 33px;
+      @media #{$small-only} {
+        margin-bottom: 15px;
+      }
+      i {
+        font-size: 1rem;
+      }
+      &:last-child {
+        margin-bottom: 50px;
+      }
+      a {
+        &:hover {
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+
+  .social-list {
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    li {
+      font-size: 2rem;
+      float: left;
+      margin-right: 30px;
+      @media #{$small-only} {
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
