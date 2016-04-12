@@ -1,7 +1,6 @@
 {
   "scripts": [
     "node_modules/jquery/dist/jquery.min.js",
-    "node_modules/foundation-sites/js/foundation.min.js",
     "source/javascripts/vendor/*.js",
     "source/javascripts/*.js"
 
