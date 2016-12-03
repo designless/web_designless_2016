@@ -1,0 +1,59 @@
+include ../partials/_meta
+
+doctype html
+html(lang="ja" prefix=("og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml"))
+  head
+    block vars
+    mixin meta(title, slug, ogpTitle, ogpDescription, ogpImage, ogpUrl)
+
+  body(id="#{slug}")
+    #fb-root
+    script.
+      window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+      return t;
+      }(document, "script", "twitter-wjs"));
+      window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '1317763314965511',
+            xfbml      : true,
+            version    : 'v2.8'
+          });
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+
+    header.header-main
+      .row
+        .columns.small-12
+          h1.text-center
+            a(href="/")
+              img(src="/images/logo.png", alt="designless", width="50")
+    article
+      block contents
+    footer.text-center
+      p
+        a(href="/", target="_blank")
+          img(src="/images/logo_black.png", alt="designless", width="100")
+      p
+        small
+          | &copy; 2016 Designless - Naoki Kanazawa
+
+
+    script(src="/app.js")

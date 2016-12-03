@@ -1,0 +1,129 @@
+extends /layouts/blog.jade
+
+block vars
+  - var title = 'Adobe XD and Adobe Illustrator'
+  - var slug = 'blog'
+  - var ogpImage = 'http://designless.net/blog/2016/12/03/images/ogp.jpg'
+  - var ogpTitle = 'Adobe Experience Design (XD) with Adobe Illustrator';
+  - var ogpDescription = 'UI Design Practice - Adobe XD Advent Calendar Day 3';
+  - var ogpUrl = 'http://designless.net/blog/2016/12/03/';
+
+
+block contents
+  header.key-visual.text-center.blog-20161203
+
+    .row
+      .columns.small-12
+        h1
+          | UI Design with Adobe XD and Adobe Illustrator
+        .date
+          | 2016/12/03
+        .author
+          span.author-face
+            img(src="/images/kanazawa.jpg", alt="Naoki Kanazawa", width="80")
+          span.author-name
+            | posted by Naoki Kanazawa
+  main
+    section
+      .row
+        .columns.small-12
+          h1
+            | Hello
+          p
+            a(href="http://www.adventar.org/calendars/1485", target="_blank")
+             | Adobe XD Advent Calendar
+            | の３日目を担当します！
+            br
+            a(href="https://life-is-tech.com", target="_blank")
+              | Life is Tech !
+            | チーフデザイナーの金澤です。
+            br.shor-for-medium-up
+            | ニックネームは「ざわっち」です。
+          p
+            | Webデザイン、コーディング、DTP、グラフィック、フォトグラフィー、
+            a(href="https://mozer.io", target="_blank")
+              | MOZER
+            | をはじめとするカリキュラム開発を行っています。
+    section
+      .row
+        .columns.small-12
+          h1
+            | Adobe Experience Design(XD)
+          p
+            | ちょうどAdobe AppBox Awards 2016という企画が開催されていたので、Adobe XDの練習をしてみました。
+            br
+            | お題が「クリスマスが楽しみになるアプリ」だったので、スタンプを押していくとツリーを作成し、アクリルのオーナメントになって届くサービスがあったらいいなーと思って作りました。
+          p
+            | Adobe XDでは制作したアプリのURLを発行できるほか、下記のようにWebサイトに埋め込んで、操作することもできます。
+            br
+            | アイコンやコンセプトは
+            a(href="https://www.behance.net/gallery/45231179/Tree-Share-your-trees", target="_blank")
+              | Behance
+            | にアップしています。
+          div.box-media
+            iframe(width="377" height="667" src="https://xd.adobe.com/embed/8ae69842-5afe-4c02-9780-dbb5faf922dc/" frameborder="0" allowfullscreen)
+
+    section
+      .row
+        .columns.small-12
+          h1
+            | with Adobe Illustrator
+          p
+            | 僕はIllustratorが大好きです、
+            br
+            | 今回は、Illustratorで制作したオブジェクトをAdobe XDに持っていったらどうなるのか実験してみました。
+
+          .panel.radius
+            h3
+              | オブジェクトを持っていく
+            figure
+              img(src="images/object.gif", alt="")
+            p
+              | Illustratorで制作したパスをXDにコピー＆ペーストできます。
+              br
+              | XDでオブジェクトをダブルクリックすることで、個別のアンカーポイントを調整することができます。
+              br
+              | ちなみにXDからコピー＆ペーストでIllustratorに持っていくと、ラスタライズされた画像になってしまいます。
+
+          .panel.radius
+            h3
+              | 効果を持っていく。
+            figure
+              img(src="images/effect.gif", alt="")
+            p
+              | Illustratorで光彩などの効果を保ったまま、コピー＆ペーストでXDに貼り付けることができます。
+              br
+              | XDでも簡単な効果をつけることもできますが、3D効果やアピアランスの重ねがけなどはIllustratorで適用してから持っていきましょう。
+
+          .panel.radius.mb50
+            h3
+              | いろんなパスを持っていく。
+            figure
+              img(src="images/tool.gif", alt="")
+            p
+              | Illustratorの色んなツールで試してみた。
+            ul.disc
+              li
+                | ブレンドツール：スムーズで設定しても、ステップに分解される。
+              li
+                | 線幅ツール：線がアウトライン化される。
+              li
+                | ワープテキスト：アウトライン化される。
+              li
+                | 文字タッチツール：形が崩れる、ダブルクリックすれば文字の編集ができる。
+              li
+                | パス上文字ツール：形が崩れる、ダブルクリックすれば１文字ずつ編集ができる。
+          p
+            | コピー＆ペーストでベクター形式のデータを移行できるのは、とても便利ですね！
+            br
+            | Adobe XD単体でもシンプルなデザインができるだけに、今後も他のAdobeアプリケーションとどのように連携していくのか非常に楽しみです。
+
+          ul.block-grid-2
+            li
+              div
+                a(class="twitter-share-button" href="https://twitter.com/intent/tweet?text=UI%20Design%20with%20Adobe%20XD%20and%20Adobe%20Illustrator" data-size="large" data-via="designless0")
+                  | Tweet
+            li
+              div(class="fb-share-button" data-href="http://designless.net/blog/2016/12/03/" data-layout="button_count" data-size="large" data-mobile-iframe="true")
+                  a(class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdesignless.net%2Fblog%2F2016%2F12%2F03%2F&amp;src=sdkpreparse")
+                    | シェア
